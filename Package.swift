@@ -23,7 +23,9 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "EmptyStateKit",
-            dependencies: []),
+            dependencies: [],
+            resources: [.process("EmptyStateView.xib")]
+        ),
         .testTarget(
             name: "EmptyStateKitTests",
             dependencies: ["EmptyStateKit"]),
