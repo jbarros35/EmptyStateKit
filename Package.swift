@@ -24,7 +24,7 @@ let package = Package(
         .target(
             name: "EmptyStateKit",
             dependencies: [],
-            resources: [.copy("Resources/EmptyStateView.xib")]
+            resources: [.process("Resources/EmptyStateView.xib")]
         ),
         .testTarget(
             name: "EmptyStateKitTests",
