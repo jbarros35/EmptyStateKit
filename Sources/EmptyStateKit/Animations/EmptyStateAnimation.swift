@@ -5,7 +5,7 @@
 //  Created by Alberto Aznar de los Ríos on 24/05/2019.
 //  Copyright © 2019 Alberto Aznar de los Ríos. All rights reserved.
 //
-
+#if !os(macOS)
 import UIKit
 
 public typealias FadeTimeInterval = TimeInterval
@@ -25,3 +25,4 @@ public enum EmptyStateAnimation {
         }
     }
 }
+#endif
